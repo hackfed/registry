@@ -1,0 +1,48 @@
+$schema: "https://schemas.hackfed.org/v1/entity/organization.json"
+apiVersion: hackfed/v1
+kind: Organization
+
+metadata:
+  orgId: bksp
+
+spec:
+  id: bksp
+  name: B4CKSP4CE
+  services:
+    about:
+      contact:
+        website: https://bksp.in
+        email: noc@bksp.in
+    access:
+      maintainers:
+        - type: github
+          username: heeeyflo
+        - type: github
+          username: radioegor146
+        - type: github
+          username: lordshatie
+    nebula:
+      - address: "fd79:7636:1f08:883d::008"
+        lighthouse:
+          enabled: true
+          endpoints:
+            - "lanskoe.loc.bksp.in:39242"
+        certificates:
+          - 10e554f66199eb96279a7548c48b8be3958fd0ccfe9e1d9b8bbd798568d94778
+    telephony:
+      exchanges:
+        - id: primary
+          protocol: iax2
+          address: "[fd79:7636:1f08:883d::008]:4569"
+          codecs:
+            - opus
+            - g722
+            - ulaw
+      prefixes:
+        - id: primary
+          prefix: "7509008"
+          description: Primary BKSP prefix
+          exchange: primary
+      phonebook:
+        - url: http://[fd79:7636:1f08:883d::008]:7767/phonebook/public
+          format: hackfed
