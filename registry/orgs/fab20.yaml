@@ -1,0 +1,47 @@
+$schema: "https://schemas.hackfed.org/v1/entity/organization.json"
+apiVersion: hackfed/v1
+kind: Organization
+
+metadata:
+  orgId: fab20
+
+spec:
+  id: fab20
+  name: FAB20
+  services:
+    about:
+      contact:
+        website: https://fab20.ee
+        email: mail@rainwalker.ee
+    access:
+      maintainers:
+        - type: github
+          username: nan0desu
+        - type: github
+          username: fab20ee
+        - type: github
+          username: Lifemotion
+        - type: github
+          username: katerainwalker
+    nebula:
+      - address: "fd79:7636:1f08:883d::009"
+        lighthouse:
+          enabled: true
+          endpoints:
+            - "ta.leitud.ee:39242"
+        certificates:
+          - 01564450a12002dafe3692541182e8ea70fe26ff3cf5cc5c5b1aa4329fd07135
+    telephony:
+      exchanges:
+        - id: primary
+          protocol: iax2
+          address: "[fd79:7636:1f08:883d::009]:4569"
+          codecs:
+            - opus
+            - g722
+            - ulaw
+      prefixes:
+        - id: primary
+          prefix: "7509009"
+          description: Primary prefix
+          exchange: primary
