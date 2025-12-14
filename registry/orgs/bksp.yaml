@@ -43,6 +43,3 @@ spec:
           prefix: "7509008"
           description: Primary BKSP prefix
           exchange: primary
-      phonebook:
-        - url: http://[fd79:7636:1f08:883d::008]:7767/phonebook/public
-          format: hackfed
