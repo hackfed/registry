@@ -1,6 +1,6 @@
 {
   "yaml.schemas": {
-    "https://schemas.hackfed.org/v1/entity/organization.json": [
+    "https://schemas.hackfed.org/v1/organization.json": [
       "/registry/orgs/*.yaml"
     ]
   }

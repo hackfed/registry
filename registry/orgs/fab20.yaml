@@ -1,4 +1,4 @@
-$schema: "https://schemas.hackfed.org/v1/entity/organization.json"
+$schema: "https://schemas.hackfed.org/v1/organization.json"
 apiVersion: hackfed/v1
 kind: Organization
 
@@ -42,6 +42,6 @@ spec:
             - ulaw
       prefixes:
         - id: primary
-          prefix: "7509009"
+          prefix: "+7509009"
           description: Primary prefix
           exchange: primary
