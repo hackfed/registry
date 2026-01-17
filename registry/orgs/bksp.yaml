@@ -1,4 +1,4 @@
-$schema: "https://schemas.hackfed.org/v1/entity/organization.json"
+$schema: "https://schemas.hackfed.org/v1/organization.json"
 apiVersion: hackfed/v1
 kind: Organization
 
@@ -28,7 +28,6 @@ spec:
           endpoints:
             - "lanskoe.loc.bksp.in:39242"
         certificates:
-          - 10e554f66199eb96279a7548c48b8be3958fd0ccfe9e1d9b8bbd798568d94778
           - 7e66c9b2ae5971e8935db7bd0aa0329bbb3d1addd9bac809f779b85c1d256851
     telephony:
       exchanges:
@@ -41,6 +40,6 @@ spec:
             - ulaw
       prefixes:
         - id: primary
-          prefix: "7509008"
+          prefix: "+7509008"
           description: Primary BKSP prefix
           exchange: primary
