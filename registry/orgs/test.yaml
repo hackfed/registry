@@ -21,7 +21,7 @@ spec:
         - type: github
           username: lordshatie
     nebula:
-      - address: "fd79:7636:1f08:883d::008"
+      - address: "fd79:7636:1f38:883d::008"
         lighthouse:
           enabled: true
           endpoints:
