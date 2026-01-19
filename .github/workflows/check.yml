@@ -2,10 +2,7 @@ name: Check
 on:
   # Run on pull requests to main branch
   pull_request:
-    types:
-      - opened
-    branches:
-      - main
+  merge_group:
 
 jobs:
   build:
