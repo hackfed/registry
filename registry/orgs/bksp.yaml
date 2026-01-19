@@ -12,7 +12,6 @@ spec:
     about:
       contact:
         website: https://bksp.in
-        email: noc@bksp.in
     access:
       maintainers:
         - type: github
