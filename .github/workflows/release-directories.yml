@@ -1,0 +1,36 @@
+name: Directories
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Compile & Release directories files
+    environment: Production
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3 # v2.1.2
+
+      - name: Compile directories
+        run: |
+          mkdir -p dist
+          bunx @hackfed/toolbox@latest generate-telephony --output dist/telephony.json ../../registry
+
+      - name: Set-up s5cmd
+        uses: peak/action-setup-s5cmd@bde462e7399c68b4a9b05549d90b0e7d5c95e60f
+        with:
+          version: v2.3.0
+
+      - name: Upload compiled directories
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          s5cmd --endpoint-url ${{ secrets.AWS_ENDPOINT_URL }} sync --delete 'dist/*.json' 's3://hackfed-directory/'
