@@ -3,10 +3,10 @@ apiVersion: hackfed/v1
 kind: Organization
 
 metadata:
-  orgId: bksp
+  orgId: test
 
 spec:
-  id: bksp
+  id: test
   name: B4CKSP4CEx
   services:
     about:
