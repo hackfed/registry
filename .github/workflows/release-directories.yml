@@ -1,4 +1,4 @@
-name: Directories
+name: Release
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Compile & Release directories files
+    name: Release Directories
     environment: Production
     permissions:
       contents: read
@@ -21,7 +21,7 @@ jobs:
       - name: Compile directories
         run: |
           mkdir -p dist
-          bunx @hackfed/toolbox@latest generate-telephony --output dist/telephony.json ../../registry
+          bunx @hackfed/toolbox@latest generate-telephony --output dist/telephony.json registry
 
       - name: Set-up s5cmd
         uses: peak/action-setup-s5cmd@bde462e7399c68b4a9b05549d90b0e7d5c95e60f
