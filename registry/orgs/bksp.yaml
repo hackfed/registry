@@ -34,12 +34,5 @@ spec:
         - id: primary
           protocol: iax2
           address: "[fd79:7636:1f08:883d::008]:4569"
-          codecs:
-            - opus
-            - g722
-            - ulaw
-      prefixes:
-        - id: primary
           prefix: "+7509008"
-          description: Primary BKSP prefix
-          exchange: primary
+          codecs: ["opus", "g722", "ulaw"]

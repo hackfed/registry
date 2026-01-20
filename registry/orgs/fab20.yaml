@@ -36,12 +36,5 @@ spec:
         - id: primary
           protocol: iax2
           address: "[fd79:7636:1f08:883d::009]:4569"
-          codecs:
-            - opus
-            - g722
-            - ulaw
-      prefixes:
-        - id: primary
           prefix: "+7509009"
-          description: Primary prefix
-          exchange: primary
+          codecs: ["opus", "g722", "ulaw"]
