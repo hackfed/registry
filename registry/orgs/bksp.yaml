@@ -21,14 +21,10 @@ spec:
           username: radioegor146
         - type: github
           username: lordshatie
-    nebula:
-      - address: "fd79:7636:1f08:883d::008"
-        lighthouse:
-          enabled: true
-          endpoints:
-            - "lanskoe.loc.bksp.in:39242"
-        certificates:
-          - 7e66c9b2ae5971e8935db7bd0aa0329bbb3d1addd9bac809f779b85c1d256851
+    wireguard:
+      - address: fd79:7636:1f08:883d::008
+        endpoint: lanskoe.loc.bksp.in:39242
+        publicKey: AlF4my3ZX0ElrIOnRLiqbpYEucD3L03DrYIzoOYuGR8=
     telephony:
       exchanges:
         - id: primary

@@ -13,15 +13,16 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Bun
-        uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3 # v2.1.2
+        uses: oven-sh/setup-bun@v2
 
       - name: Compile directories
         run: |
           mkdir -p dist
           bunx @hackfed/toolbox@latest generate-telephony --output dist/telephony.json registry
+          bunx @hackfed/toolbox@latest generate-wireguard --output dist/wireguard.json registry
 
       - name: Set-up s5cmd
         uses: peak/action-setup-s5cmd@bde462e7399c68b4a9b05549d90b0e7d5c95e60f

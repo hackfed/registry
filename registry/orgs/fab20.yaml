@@ -23,14 +23,6 @@ spec:
           username: Lifemotion
         - type: github
           username: katerainwalker
-    nebula:
-      - address: "fd79:7636:1f08:883d::009"
-        lighthouse:
-          enabled: true
-          endpoints:
-            - "ta.leitud.ee:39242"
-        certificates:
-          - 01564450a12002dafe3692541182e8ea70fe26ff3cf5cc5c5b1aa4329fd07135
     telephony:
       exchanges:
         - id: primary
