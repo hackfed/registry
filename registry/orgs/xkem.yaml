@@ -1,0 +1,30 @@
+$schema: "https://schemas.hackfed.org/v1/organization.json"
+apiVersion: hackfed/v1
+kind: Organization
+
+metadata:
+  orgId: xkem
+
+spec:
+  id: xkem
+  name: "Hacker Embassy"
+  services:
+    about:
+      contact:
+        website: https://hackem.cc
+        email: hackfed@hackem.cc
+    access:
+      maintainers:
+        - type: github
+          username: adipierro
+    wireguard:
+      - address: fd79:7636:1f08:883d::101
+        endpoint: space.hackem.cc:39242
+        publicKey: +nkyQSASOcpZzPLxehayazaZWOp1rKHAs0W/Z0pKJgk=
+    telephony:
+      exchanges:
+        - id: primary
+          protocol: iax2
+          address: "[fd79:7636:1f08:883d::101]:4569"
+          prefix: "+7509101"
+          codecs: ["opus", "g722", "ulaw"]
