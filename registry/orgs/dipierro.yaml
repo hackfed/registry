@@ -1,0 +1,30 @@
+$schema: "https://schemas.hackfed.org/v1/organization.json"
+apiVersion: hackfed/v1
+kind: Organization
+
+metadata:
+  orgId: dipierro
+
+spec:
+  id: dipierro
+  name: "DiPierro"
+  services:
+    about:
+      contact:
+        website: https://dipier.ro
+        email: hackfed@dipier.ro
+    access:
+      maintainers:
+        - type: github
+          username: adipierro
+    wireguard:
+      - address: fd79:7636:1f08:883d::911
+        endpoint: evn.dipier.ro:39242
+        publicKey: szMm//s7m7bvGeQQGYj02BR2/8YhCHCcRdMei6dy5no=
+    telephony:
+      exchanges:
+        - id: primary
+          protocol: iax2
+          address: "[fd79:7636:1f08:883d::911]:4569"
+          prefix: "+7509911"
+          codecs: ["opus", "g722", "ulaw"]
