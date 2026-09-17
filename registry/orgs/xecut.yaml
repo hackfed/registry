@@ -19,7 +19,7 @@ spec:
           username: kirill9617
     wireguard:
       - address: fd79:7636:1f08:883d::381
-        endpoint: space.xecut.me:3469
+        endpoint: ist.xecut.me:3469
         publicKey: oYOuRL8Xv+tW/qiq5f1Yz9YImg01YPmqY6B6VkCNlB8=
     telephony:
       exchanges:
