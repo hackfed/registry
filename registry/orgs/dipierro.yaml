@@ -19,7 +19,7 @@ spec:
           username: adipierro
     wireguard:
       - address: fd79:7636:1f08:883d::911
-        endpoint: evn.dipier.ro:39242
+        endpoint: evn.dipier.ro:31337
         publicKey: szMm//s7m7bvGeQQGYj02BR2/8YhCHCcRdMei6dy5no=
     telephony:
       exchanges:
