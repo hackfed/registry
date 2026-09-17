@@ -19,7 +19,7 @@ spec:
           username: adipierro
     wireguard:
       - address: fd79:7636:1f08:883d::101
-        endpoint: space.hackem.cc:39242
+        endpoint: space.hackem.cc:31337
         publicKey: +nkyQSASOcpZzPLxehayazaZWOp1rKHAs0W/Z0pKJgk=
     telephony:
       exchanges:
