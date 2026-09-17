@@ -20,6 +20,7 @@ spec:
     wireguard:
       - address: fd79:7636:1f08:883d::381
         publicKey: oYOuRL8Xv+tW/qiq5f1Yz9YImg01YPmqY6B6VkCNlB8=
+        endpoint: ist.xecut.me:3469
     telephony:
       exchanges:
         - id: primary
